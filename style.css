@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "GoT";
+  src: url("fonts/Game of Thrones.ttf");
+}
+body {
+  margin: 0;
+  min-height: 100vh;
+  position: relative;
+  padding-bottom: 100px;
+  font-family: "GoT";
+  width: 100%;
+  max-width: 1960px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+}
+.section__image {
+  background: url(img/maxresdefault.jpg);
+  width: 50%;
+  background-size: cover;
+  background-position: center center;
+}
+.section__form {
+  background: url(img/darknoise.png);
+  width: 50%;
+}
+.section__form .form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  width: 60%;
+  margin: 0 auto;
+  font-family: "Open Sans";
+}
+.section__form .form__headline {
+  font-family: Got, "Open Sans";
+  color: #d3bb89;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+.section__form .form__label {
+  color: #d3bb89;
+}
+.section__form .form__input {
+  border: none;
+  border-bottom: 1px solid #d3bb89;
+  background-color: transparent;
+  color: #d3bb89;
+}
+.section__form .form__input::placeholder {
+  color: grey;
+}
+.section__form .form__ask {
+  color: #fef8eb;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=style.css.map */
