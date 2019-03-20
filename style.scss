@@ -3,8 +3,8 @@ $gold_button: #c19a49;
 $white: #fef8eb;
 $black:#202020;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans'); //serif
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond'); //sans-serif
 @font-face{
   font-family: 'GoT';
   src: url('fonts/Game\ of\ Thrones.ttf');
@@ -15,7 +15,7 @@ body {
   height: 100vh;
   position:relative; 
   padding-bottom:100px;
-  font-family: 'GoT';
+  font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
   width: 100%;
   max-width: 1960px;
   margin: 0 auto;
@@ -40,16 +40,13 @@ body {
   &__form{
     background: url(img/darknoise.png);
     width: 50%;
-    font-family: "Open Sans";
     .form{
-      // padding-top: 70px;
       display: flex;
       flex-direction: column;
       align-items: left;
       justify-content: center;
       width: 60%;
       margin: 0 auto;
-      font-family: "Open Sans";
       &__headline{
         font-family: Got, "Open Sans";
         color: $gold;
@@ -61,17 +58,15 @@ body {
       }
       &__label{
         color: $gold;
-        font-family: "EB Garamond";
+        font-family: "EB Garamond", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: 22px;
         margin-top: 6%;
-        // margin-top: 30px;
       }
       &__input{
         border: none;
         border-bottom: 1px solid $gold;
         background-color: transparent;
         color: $gold;
-        // padding-bottom: 16px;
         font-size: 19px;
         padding-bottom: 3%;
         margin-top: 3%;
@@ -80,12 +75,12 @@ body {
         }
         &-textarea{
           resize: none;
+          font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
         }
       }
       &__ask{
-        color: white;
+        color: $white;
         font-size: 12px;
-        // margin-bottom: 18px;
       }
       &__button{
         background-color: $gold_button;
@@ -101,17 +96,11 @@ body {
           transform: translateY(1px);
           background-color: darken($gold, 20%);
         }
-        // &:focus{
-        //   border: 1px solid black;
-        // }
       }
       &__ok{
         color: $white;
-        // font-weight: 600;
-        font-family: serif;
         border-left: 1.5px solid $gold;
         padding-left: 10px;
-        // margin-bottom: 36px;
       }
       &__select{
         position: relative;
@@ -126,14 +115,12 @@ body {
           -moz-appearance: none;
           -ms-appearance: none;
           appearance: none;
-          // outline: 0;
           box-shadow: none;
           border: 0 !important;
           background: transparent;
           background-image: none;
           font-size: 18px;
           padding: 6px 0px;
-
           width: 100%;
           height: 100%;
           margin: 0;
@@ -159,23 +146,26 @@ body {
   }
   &__box{
     position: absolute;
-		margin-top: 0.2em;
-		margin-left: -1em;
-		width: 0.6em;
-		height: 0.6em;
-		overflow: hidden;
-		border-radius: 0.05em;
-		background-color: $gold;
-		background-repeat: no-repeat;
-	  background-position: 50% 50%;
+    margin-left: -1.5em;
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    background-color: $gold;
+  }
+  &__option{
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    margin-top: 10px;
   }
 }
-/* Checked */
 .check__input:checked + .check__box {
   background-color: $gold;
   background-image: url(https://cdn.glitch.com/d6162378-5823-4160-a555-3d9789bd2b92%2Fcheck.svg?1550563475518);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-/* Focused */
 .check__input:focus + .check__box {
   box-shadow:
     0 0 0 2px darken($gold, 20%);
