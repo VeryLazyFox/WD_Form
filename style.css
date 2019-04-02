@@ -2,9 +2,17 @@
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
 @font-face {
   font-family: "GoT";
-  src: url("fonts/Game of Thrones.ttf");
+  src: url("fonts/GameofThrones.ttf");
 }
-body {
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+*:focus {
+  outline-color: transparent;
+}
+
+.wrapper {
   margin: 0;
   height: 100vh;
   position: relative;
@@ -14,14 +22,6 @@ body {
   max-width: 1960px;
   margin: 0 auto;
   padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0px;
-}
-*:focus {
-  outline-color: #d3bb89;
 }
 
 .section {
@@ -41,7 +41,7 @@ body {
 .section__form .form {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: stretch;
   justify-content: center;
   width: 60%;
   margin: 0 auto;
@@ -52,8 +52,8 @@ body {
   text-transform: uppercase;
   font-weight: normal;
   text-align: center;
-  font-size: 32px;
-  margin-bottom: 9%;
+  font-size: 30px;
+  margin-bottom: 10%;
 }
 .section__form .form__label {
   color: #d3bb89;
@@ -66,9 +66,9 @@ body {
   border-bottom: 1px solid #d3bb89;
   background-color: transparent;
   color: #d3bb89;
-  font-size: 19px;
-  padding-bottom: 3%;
-  margin-top: 3%;
+  font-size: 20px;
+  padding-bottom: 5%;
+  margin-top: 5%;
 }
 .section__form .form__input::placeholder {
   color: grey;
