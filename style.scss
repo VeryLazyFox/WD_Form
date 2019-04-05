@@ -17,10 +17,8 @@ $black:#202020;
   }
 }
 .wrapper{
-  margin: 0;
   height: 100vh;
-  position:relative; 
-  padding-bottom:100px;
+  position: relative; 
   font-family: 'Open Sans', Georgia, 'Times New Roman', Times, serif;
   width: 100%;
   max-width: 1960px;
@@ -31,10 +29,9 @@ $black:#202020;
   height: 100vh;
   display: flex;
   &__image{
-    background: url(img/maxresdefault.jpg);
+    background: url(img/maxresdefault.jpg) center center;
     width: 50%;
     background-size: cover;
-    background-position: center center;
   }
   &__form{
     background: url(img/darknoise.png);
@@ -47,7 +44,7 @@ $black:#202020;
       width: 60%;
       margin: 0 auto;
       &__headline{
-        font-family: Got, "Open Sans";
+        font-family: Got, "Open Sans", Georgia, 'Times New Roman', Times, serif;
         color: $gold;
         text-transform: uppercase;
         font-weight: normal;
@@ -98,7 +95,7 @@ $black:#202020;
       }
       &__ok{
         color: $white;
-        border-left: 1.5px solid $gold;
+        border-left: 1px solid $gold;
         padding-left: 10px;
       }
       &__select{
@@ -112,12 +109,9 @@ $black:#202020;
         select{
           -webkit-appearance: none;
           -moz-appearance: none;
-          -ms-appearance: none;
-          appearance: none;
           box-shadow: none;
           border: 0 !important;
-          background: transparent;
-          background-image: none;
+          background: transparent none;
           font-size: 18px;
           padding: 6px 0px;
           width: 100%;
@@ -139,7 +133,6 @@ $black:#202020;
   color: $gold;
   &__input{
     position: absolute;
-    appearance: none;
     -webkit-appearance: none;
 		-moz-appearance: none;
   }
