@@ -7,9 +7,7 @@
 * {
   box-sizing: border-box;
   margin: 0px;
-}
-*:focus {
-  outline-color: transparent;
+  outline: none;
 }
 
 .wrapper {
@@ -27,12 +25,12 @@
   display: flex;
 }
 .section__image {
-  background: url(img/maxresdefault.jpg) center center;
+  background: url("img/maxresdefault.jpg") center center;
   width: 50%;
   background-size: cover;
 }
 .section__form {
-  background: url(img/darknoise.png);
+  background: url("img/darknoise.png");
   width: 50%;
 }
 .section__form .form {
