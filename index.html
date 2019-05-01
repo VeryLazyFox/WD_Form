@@ -13,40 +13,45 @@
         <section class="section section__form">
           <form class="form">
             <h1 class="form__headline">Game of thrones</h1>
-            <!-- <label class="form__label" for="email">Enter your email</label>
-            <input class="form__input" id="email" type="email" placeholder="arya@westeros.com">
-            <label class="form__label" for="password">Choose secure password</label>
-            <span class="form__ask">Must be at least 8 characters</span>
-            <input class="form__input" id="password" type="password" placeholder="password">
-            <label class="check check__option">
-              <input class="check__input" type="checkbox">
-              <span class="check__box"></span> Remember me
-            </label>
-            <button type="submit" class="form__button">Sign Up</button> -->
-            <p class="form__ok">
-              You`ve succsessfully joined the game.<br>
-              Tell us more about yourself.
-            </p>
-            <label class="form__label" for="username">Who are you</label>
-            <span class="form__ask">Alpha-numeric username</span>
-            <input class="form__input" id="username" type="text" placeholder="arya">
-            <label class="form__label" for="select">Your Grat House</label>
-            <div class="form__input form__select">
-              <select id="select">
-                <option value="" disabled selected hidden>Select House</option>
-                <option class="option" value="0">House Arryn</option>
-                <option class="option" value="1">House Greyjoy</option>
-                <option class="option" value="2">House Lannister</option>
-                <option class="option" value="3">House Stark</option>
-                <option class="option" value="4">House Targaryen</option>
-              </select>
+            <div id="firstForm" class="form">
+              <label class="form__label" for="email">Enter your email</label>
+              <input required class="form__input" id="email" type="email" minlength="3" placeholder="arya@westeros.com">
+              <label class="form__label" for="password">Choose secure password</label>
+              <span class="form__ask">Must be at least 8 characters</span>
+              <input required class="form__input" id="password" type="password" placeholder="password" minlength="8" maxlength="30">
+              <label class="check check__option">
+                <input class="check__input" type="checkbox">
+                <span class="check__box"></span> Remember me
+              </label>
+              <button type="button" class="form__button" id="buttonRegistration">Sign Up</button> 
             </div>
-            <label class="form__label" for="textarea">Your preferebces, hobbies, wishes, etc.</label>
-            <textarea class="form__input form__input-textarea" id="textarea" placeholder="I have a long TOKILL list..."></textarea>
-            <button type="submit" class="form__button">Save</button>
+            <div id="secondForm" class="form display-none">
+              <p class="form__ok">
+                You`ve succsessfully joined the game.<br>
+                Tell us more about yourself.
+              </p>
+              <label class="form__label" for="username">Who are you</label>
+              <span class="form__ask">Alpha-numeric username</span>
+              <input class="form__input" id="username" type="text" placeholder="arya" minlength="3">
+              <label class="form__label" for="select">Your Grat House</label>
+              <div class="form__input form__select" id="wrapperSelectHouse">
+                <select id="selectHouse">
+                  <option value="" disabled selected hidden>Select House</option>
+                  <option class="option" value="0">House Arryn</option>
+                  <option class="option" value="1">House Greyjoy</option>
+                  <option class="option" value="2">House Lannister</option>
+                  <option class="option" value="3">House Stark</option>
+                  <option class="option" value="4">House Targaryen</option>
+                </select>
+              </div>
+              <label class="form__label" for="textarea">Your preferebces, hobbies, wishes, etc.</label>
+              <textarea class="form__input form__input-textarea" id="textarea" placeholder="I have a long TOKILL list..."></textarea>
+              <button type="button" class="form__button" id="buttonSave">Save</button>
+            </div>
           </form>
         </section> 
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

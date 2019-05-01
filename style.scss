@@ -159,3 +159,14 @@ $black:#202020;
 .check__input:focus + .check__box {
   box-shadow: 0 0 0 2px darken($gold, 20%);
 }
+.display-none{
+  display: none !important;
+}
+.validation{
+  &:invalid{
+    border-bottom: 1px solid red;
+  }
+}
+.error{
+  border-bottom: 1px solid red !important;
+}

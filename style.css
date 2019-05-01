@@ -160,4 +160,16 @@
   box-shadow: 0 0 0 2px #b38f43;
 }
 
+.display-none {
+  display: none !important;
+}
+
+.validation:invalid {
+  border-bottom: 1px solid red;
+}
+
+.error {
+  border-bottom: 1px solid red !important;
+}
+
 /*# sourceMappingURL=style.css.map */
