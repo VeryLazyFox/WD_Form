@@ -24,7 +24,6 @@ email.addEventListener("click", removeError);
 password.addEventListener("click", removeError);
 username.addEventListener("click", removeError);
 selectHouse.addEventListener("click", removeErrorParrent);
-
 email.addEventListener("blur", firstValidation);
 password.addEventListener("blur", firstValidation);
 username.addEventListener("blur", firstValidation);
@@ -34,10 +33,12 @@ function firstValidation(event) {
   elem.removeEventListener("blur", firstValidation);
   elem.classList.add("validation");
 }
+
 function removeError(event) {
   let elem = document.getElementById(event.target.id);
   elem.classList.remove("error");
 }
+
 function removeErrorParrent(event) {
   let elem = document.getElementById(event.target.id);
   elem.parentNode.classList.remove("error");
