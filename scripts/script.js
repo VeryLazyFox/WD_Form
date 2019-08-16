@@ -10,7 +10,7 @@ buttonRegistration.addEventListener("click", () => {
     password.classList.add("error");
   }
 })
-
+  
 buttonSave.addEventListener("click", () => {
   if (selectHouse.value == ""){
     wrapperSelectHouse.classList.add("error");
@@ -29,17 +29,17 @@ password.addEventListener("blur", firstValidation);
 username.addEventListener("blur", firstValidation);
 
 function firstValidation(event) {
-  let elem = document.getElementById(event.target.id);
+  const elem = document.getElementById(event.target.id);
   elem.removeEventListener("blur", firstValidation);
   elem.classList.add("validation");
 }
 
 function removeError(event) {
-  let elem = document.getElementById(event.target.id);
+  const elem = document.getElementById(event.target.id);
   elem.classList.remove("error");
 }
 
 function removeErrorParrent(event) {
-  let elem = document.getElementById(event.target.id);
+  const elem = document.getElementById(event.target.id);
   elem.parentNode.classList.remove("error");
 }

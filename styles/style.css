@@ -2,12 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond");
 @font-face {
   font-family: "GoT";
-  src: url("fonts/GameofThrones.ttf");
+  src: url("../fonts/GameofThrones.ttf");
 }
 * {
   box-sizing: border-box;
   margin: 0px;
   outline: none;
+}
+
+button {
+  cursor: pointer;
 }
 
 .wrapper {
@@ -25,12 +29,12 @@
   display: flex;
 }
 .section__image {
-  background: url("img/maxresdefault.jpg") center center;
+  background: url("../img/maxresdefault.jpg") center center;
   width: 50%;
   background-size: cover;
 }
 .section__form {
-  background: url("img/darknoise.png");
+  background: url("../img/darknoise.png");
   width: 50%;
 }
 .section__form .form {

@@ -7,12 +7,15 @@ $black:#202020;
 @import url('https://fonts.googleapis.com/css?family=EB+Garamond'); //sans-serif
 @font-face{
   font-family: 'GoT';
-  src: url('fonts/GameofThrones.ttf');
+  src: url('../fonts/GameofThrones.ttf');
 }
 * {
   box-sizing: border-box;
   margin: 0px;
   outline: none;
+}
+button {
+  cursor: pointer;
 }
 .wrapper {
   height: 100vh;
@@ -27,12 +30,12 @@ $black:#202020;
   height: 100vh;
   display: flex;
   &__image {
-    background: url('img/maxresdefault.jpg') center center;
+    background: url('../img/maxresdefault.jpg') center center;
     width: 50%;
     background-size: cover;
   }
   &__form {
-    background: url('img/darknoise.png');
+    background: url('../img/darknoise.png');
     width: 50%;
     .form {
       display: flex;
@@ -84,7 +87,7 @@ $black:#202020;
         margin-top: 7%;
         font-size: 18px;
         &:hover {
-         background-color: darken($gold, 20%);
+          background-color: darken($gold, 20%);
         }
         &:active {
           transform: translateY(1px);
