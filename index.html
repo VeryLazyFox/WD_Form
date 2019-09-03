@@ -4,14 +4,44 @@
     <meta charset="UTF-8">
     <title>GOT</title>
     <link href="styles/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <!-- <link rel="stylesheet" href="../WD_Form/styles/jquery.sweet-dropdown.min.css" /> -->
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/fyuanfen/Selectpick/master/src/css/select.css">
+    <link rel="stylesheet" href="styles/dropSelect.css"> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- <script src="http://code.jquery.com/jquery-latest.min.js"></script> -->
+    <script type="text/javascript" src="scripts/dropSelect.js"></script>
   </head>
   <body>
+    
+    <!-- <script src="https://raw.githubusercontent.com/fyuanfen/Selectpick/master/dist/js/select.min.js"></script>
+    <script src="../WD_Form/jquery-nice-select-1.1.0/js/jquery.nice-select.min.js"></script> -->
     <div class="wrapper">
       <div class="section">
-        <section class="section section__image"></section>
+        <section class="section section__image">
+            <div class="owl-carousel">
+              <img class="owl-carousel__item" src="../WD_Form/img/arryn.jpg" alt="picture of the house">
+              <img class="owl-carousel__item" src="../WD_Form/img/greyjoy.jpg" alt="picture of the house">        
+              <img class="owl-carousel__item" src="../WD_Form/img/lannister.jpg" alt="picture of the house">
+              <img class="owl-carousel__item" src="../WD_Form/img/stark.jpg" alt="picture of the house">
+              <img class="owl-carousel__item" src="../WD_Form/img/targaryen.jpg" alt="picture of the house">
+              <img class="owl-carousel__item" src="../WD_Form/img/tully.jpg" alt="picture of the house">
+              <img class="owl-carousel__item" src="../WD_Form/img/baratheon.jpg" alt="picture of the house">
+            </div>
+        </section>
         <section class="section section__form">
           <form class="form">
             <h1 class="form__headline">Game of thrones</h1>
+
+            <!-- <div class="form__input form__select" id="wrapperSelectHouse"> -->
+                <!-- <div class="dropdown-menu dropdown-anchor-top-left dropdown-has-anchor" id="dropdown-standard"> -->
+                  
+              <!-- </div> -->
+
+
             <div id="firstForm" class="form">
               <label class="form__label" for="email">Enter your email</label>
               <input required class="form__input" id="email" type="email" minlength="3" placeholder="arya@westeros.com">
@@ -35,12 +65,14 @@
               <label class="form__label" for="selectHouse">Your Great House</label>
               <div class="form__input form__select" id="wrapperSelectHouse">
                 <select id="selectHouse">
-                  <option value="" disabled selected hidden>Select House</option>
+                  <option disabled selected hidden>Select House</option>
                   <option class="option" value="0">House Arryn</option>
                   <option class="option" value="1">House Greyjoy</option>
                   <option class="option" value="2">House Lannister</option>
                   <option class="option" value="3">House Stark</option>
                   <option class="option" value="4">House Targaryen</option>
+                  <option class="option" value="5">House Tally</option>
+                  <option class="option" value="5">House Baratheon</option>
                 </select>
               </div>
               <label class="form__label" for="textarea">Your preferences, hobbies, wishes, etc.</label>
@@ -52,5 +84,6 @@
       </div>
     </div>
     <script src="scripts/script.js"></script>
+
   </body>
 </html>

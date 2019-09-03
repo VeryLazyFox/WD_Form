@@ -30,7 +30,7 @@ button {
   height: 100vh;
   display: flex;
   &__image {
-    background: url('../img/maxresdefault.jpg') center center;
+    // background: url('../img/maxresdefault.jpg') center center;
     width: 50%;
     background-size: cover;
   }
@@ -173,3 +173,4 @@ button {
 .error{
   border-bottom: 1px solid red !important;
 }
+

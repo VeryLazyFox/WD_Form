@@ -23,7 +23,7 @@ buttonSave.addEventListener("click", () => {
 email.addEventListener("click", removeError);
 password.addEventListener("click", removeError);
 username.addEventListener("click", removeError);
-selectHouse.addEventListener("click", removeErrorParrent);
+
 email.addEventListener("blur", firstValidation);
 password.addEventListener("blur", firstValidation);
 username.addEventListener("blur", firstValidation);
@@ -43,3 +43,23 @@ function removeErrorParrent(event) {
   const elem = document.getElementById(event.target.id);
   elem.parentNode.classList.remove("error");
 }
+
+$('.owl-carousel').owlCarousel({
+  loop: false,
+  margin: 0,
+  nav: false,
+  items: 1,
+  center: true,
+  loop: true,
+  autoHeight:true,
+  dots: false,
+})
+
+$('#selectHouse').dropSelect({
+    callBack: function(value) {
+        $('#selectedValue').text(value);
+        const owl = $(".owl-carousel")
+        console.log($(this).val());
+        owl.trigger('to.owl.carousel', $(this).val(), 300);
+    },
+});
